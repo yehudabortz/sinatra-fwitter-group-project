@@ -1,0 +1,17 @@
+<% if logged_in? %>
+  <form action='/tweets' method="post">
+
+    <br>
+    <textarea type="text" name="content"></textarea><br>
+    Create Your Tweet:
+    <br>
+    <input type="submit" id="submit" value="submit">
+
+
+  </form>
+
+  <% else %>
+      <h1> You Must Be Logged in to Make Tweets </h1>
+  <% end %>
+
+  
